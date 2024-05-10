@@ -1,0 +1,269 @@
+/* structure */
+
+
+body, html{
+    background-image: linear-gradient(to right, rgb(255, 95, 121), rgb(255, 138, 159), pink);
+    overflow-x: hidden;
+    /* margin-bottom: 60px; */
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  
+  .nav{
+    background-color: rgb(255, 174, 174);
+    z-index: 2;
+  }
+  #navBar{
+    background-color: rgb(255, 174, 174);
+    z-index: 2;
+    /* position:sticky; */
+  }
+  
+  .nav-link {
+    color: ghostwhite;
+    font-weight: bold;
+  }
+  .navbar-nav .nav-link.active {
+    color: red;
+  }
+  
+  
+  footer{
+    background-color: pink;
+    border: 1px solid white;
+    margin-top: 10px;
+  }
+  .footer-Para{
+    margin: 5px;
+    margin-top: 10px;
+  }
+  
+  #gitPic{
+    width: 50px;
+    height: 50px;
+    border: 1px;
+    border-radius: 50px;
+  }
+  
+  
+  /* About Section */
+  
+  /* landing page */
+  
+  
+  .main{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* About me section */
+  
+  #aboutMe{
+    margin-top: 5px;
+  }
+  
+  #self{
+    width: 4%;
+    height: 7%;
+    margin: auto;
+    margin: 2%;
+    border-radius:20px;
+  }
+  
+  
+  .container-about1{
+    /* display: flex;
+    justify-content: center; */
+    border: 2px solid white;
+    background-image: url(https://chany4.github.io/images.Portfolio/images/d8ac3ff154bd4d3f34b4459c55b78bd8.gif);
+    background-size:cover;
+  }
+  #brief{
+    margin: 50px;
+    border-radius: 20px;
+    align-content: flex-start;
+    border: 10px solid pink;
+    height: 470px;
+    width: 700px;
+    background-color: rgba(255, 255, 255, 0.781);
+  
+  }
+  #aspire{
+    align-self: center;
+    font-size: 30px;
+    object-fit: cover;
+    padding: 10px;
+  }
+  #briefHead{
+    font-size: 30px;
+    margin-top: 10px;
+    color: red;
+    background-color: transparent;
+    border: none;
+  }
+  
+  /* Work and Education Section */
+  .box{
+    padding: 2%;
+    margin: 4%;
+    border: 3px solid white;
+    border-radius: 25px;
+  }
+  #self2{
+    width: 70% ;
+    height: 100%;
+    border-radius: 20px;
+  }
+  
+  .col> #about1-box-1{
+    width:300px;
+    height: 330px;
+    margin: 50px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.781);
+  
+  }
+  
+  .col> #about1-box-2{
+    width:300px;
+    height: 120px;
+    margin-left: 50px;
+    border: 1px solid white;
+    border-radius: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.781);
+  }
+  
+  img[alt="self"]{
+    width:260px;
+    height: 170px;
+    border: 20px;
+    object-fit: cover;
+    margin: 10px 20px 10px 20px; 
+    border-radius: 15px;
+    z-index: 1;
+  }
+  
+  
+  #eduWork{
+    margin-top: 50px;
+    padding: 3%;
+  
+  }
+  
+  #education-box-1{
+    width: 400px;
+    height: 500px;
+    border: 1px solid white;
+  }
+  
+  #businessBox{
+    border-radius: 50px;
+    background: #ff70b5;
+    box-shadow:  20px 20px 60px #d95f9a,
+             -20px -20px 60px #ff81d0;
+    display: flow-root;
+    margin-bottom: 10%;
+  }
+  
+  #business{
+    width: 10%;
+    height:15%;
+  }
+  #businessBox>p{
+    padding: 2%;
+    color: black;
+    font-weight: bold;
+  }
+  img[alt="businessImg1"]{
+    float:inline-start;
+    margin-right: 10px;
+  }
+  
+  img[alt="businessImg2"]{
+    float: inline-end;
+  }
+  #businessBox{
+    padding: 3%;
+  }
+  
+  
+  /* skills Section */
+  
+  #skills{
+    border: 2px solid white;
+    margin-top: 10%;
+    border-radius: 20px;
+    background-color: white;
+  }
+  
+  #skills>.row>[class="col-11"]{
+    border: 3px solid rgb(131, 0, 0);
+    background-color: red;
+    margin: 1.5%;
+    padding: 1.5%;
+    color: white;
+    border-radius: 15px;
+  }
+  
+  #skills>.row>[class="col-11"]>ul li{
+    margin: 4px;
+    padding: 4px;
+  }
+  
+  
+  
+  /* Projects Section */
+  
+    /* see if u can make the shadow of the cards pink and scale increase, use hover effect */
+  
+  
+  
+  /* Testiomonial Section */
+  
+  
+  /* Contact me section */
+  
+  label{
+    color: White;
+    background-color: rgb(255, 129, 150);
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+  }
+  
+  input{
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Extra stuff */
+  
+  mark{
+    color: tomato;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+  
+  }
+  #contact2{
+    padding: 4%;
+  }
+  
+  [value="Submit"]{
+    background-color: rgb(255, 147, 255);
+    color: white;
+    border: 3px solid rgb(245, 41, 177);
+  }
+  
+  
+  /* Animations */
+  
+  /* media Queries */
+  
