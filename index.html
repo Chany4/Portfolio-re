@@ -8,6 +8,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav id="navBar">
@@ -53,9 +54,10 @@
       <!-- Landing page -->
 
   <section class="main" id="Landing">
-    <div class="container-lg">
+    <div class="container-lg" data-aos="zoom-in-right">
       <div class="row">
         <div class="col-md-6">
+          <img src="https://chany4.github.io/images.Portfolio/images/self3.jpg" class="w-50 " alt="self3" id="self3">
         </div>
         <div class="col-md-6">
           <div class="home-text">
@@ -85,15 +87,20 @@
 
   <!-- About me page -->
 
-  <section class="container-about1 d-flex" id="aboutMe">
-    <div class="row">
+  <section class="container-about1 d-flex" id="aboutMe" >
+    <div class="row" data-aos="zoom-in-left">
       <div class="col">
-        <div class="box" id="about1-box-1"><img
-            src="https://chany4.github.io/images.Portfolio/images/IMG_20240505_163306.jpg" alt="self">
+        <div class="box" id="about1-box-1">
+          <img
+            src="https://chany4.github.io/images.Portfolio/images/20240422_114648.jpg" alt="self">
         </div>
         <div class="box" id="about1-box-2">
           <p id="aspire">I am an aspiring Software developer</p><br>
 
+
+          <p class="placeholder-glow">
+            <span class="placeholder col-12"></span>
+          </p>
         </div>
       </div>
       <div class="col" id="brief">
@@ -117,7 +124,7 @@
   <!-- Education and Work Experience -->
 
   <section class="container d-flex" id="eduWork">
-    <div class="row">
+    <div class="row" data-aos="zoom-in-right">
       <div class="col">
         <div class="box">
           <h4>Education</h4>
@@ -148,10 +155,11 @@
 
   <br><br><br>
 
-  <section class="container d-flex mw-1" id="businessBox">
+  <section class="container d-flex mw-1" id="businessBox" data-aos="zoom-out-up">
     <img src="https://chany4.github.io/images.Portfolio/images/Screenshot_20240509_170532.jpg" class="rounded-circle"
       alt="businessImg1" id="business">
-    <p>I am very proud to say that I officially launched my small business at the
+    <p>
+      I am very proud to say that I officially launched my small business at the
       beginning of the year, in order to help my family out financially and in terms
       of profit , I calculated the total profit percentage so far to 113%. I have had my
       challenges in terms buying the materials needed for my business BUT I made
@@ -159,7 +167,8 @@
       which I did filing work. When my product was NOT selling a I hoped it would at
       a certain stage I adapted and brought in new project ideas that generated an
       entirely new source of income. Having a business has shown me that I can be
-      very adaptive, strategic and innovative when things do not go as expected. </p>
+      very adaptive, strategic and innovative when things do not go as expected.
+      </p>
     <img src="https://chany4.github.io/images.Portfolio/images/IMG_20240213_182900.jpg" class="rounded-circle"
       alt="businessImg2" id="business">
   </section>
@@ -167,19 +176,28 @@
   <!-- Skills Section -->
   <!-- ask how to add  -->
 
-  <section class="container mt-5 justify-content-center py-5" id="skills">
+  <section class="container mt-5 justify-content-center py-5" id="skills" data-aos="fade-up"
+  data-aos-duration="1000">
     <div class="row text-center">
       <h1 class="text-danger"><b>Skills</b></h1>
     </div>
     <div class="row justify-content-center">
-      <div class="col-11">
+      <div class="col-12 d-flex justify-content-center my-2">
         <h4>Programming skills</h4>
-        <ul>
-          <li>Intermediate level to programming in <mark>HTML5</mark></li>
-          <li>Intermediate level to programming in <mark>CSS3</mark></li>
-          <li>Able to code using <mark>Bootsrap's Open Source framework</mark></li>
-          <li>Able to use <mark>Git Bash</mark> and navigate through my local machine via <mark>Command Line</mark></li>
+      </div>
+      <div class="col-12 d-flex justify-content-center my-2">
+        <ul class="py-5" id="skill-List">
+          <li class="my-3">Intermediate level to programming in <mark>HTML5</mark></li>
+          <li class="my-3">Intermediate level to programming in <mark>CSS3</mark></li>
+          <li class="my-3">Able to code using <mark>Bootsrap's Open Source framework</mark></li>
+          <li class="my-3">Able to use <mark>Git Bash</mark> and navigate through my local machine via <mark>Command Line</mark></li>
         </ul>
+      </div>
+      <div class="col-12 d-flex justify-content-center">
+        <img src="https://chany4.github.io/images.Portfolio/images/html5.png"  width="80px"  class="mx-5" alt="HTML5">
+        <img src="https://chany4.github.io/images.Portfolio/images/css3.png"  width="80px"  class="mx-5" alt="CSS3">
+        <img src="https://chany4.github.io/images.Portfolio/images/bootstrap.jpg" width="80px"  class="mx-5" alt="bootstrap">
+        <img src="https://chany4.github.io/images.Portfolio/images/GitHub-Mark-ea2971cee799.png" width="80px"  class="mx-5" alt="gitPicture">
       </div>
     </div>
   </section>
@@ -188,78 +206,173 @@
 
   <!-- wanna decrease the margin on sides -->
 
-  <section class="project mt-5 py-5" id="projects">
-    <div class="container-lg py-4">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="section-title text-center">
-            <h2 class="fw-bold mb-5">Projects</h2>
+  <section class="project mt-5 py-5" id="projects" data-aos="zoom-in-left">
+    <div class="project-container" >
+        <div class="container-lg py-4">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="section-title text-center">
+                <h2 class="fw-bold mb-5">Projects</h2>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="row d-flex justify-content-center">
-      <div class="card my-5 mx-5" style="width: 18rem;">
-        <img src="..." class="w-100 img.thumbnail" alt="...">
-        <div class="card-body">
-          <h5 class="text-capitalize fs-5 my-2">Life Choices Experience Report</h5>
-          <p class="card-text">This project was created to showcase all the things that I have learnt so far at Life
-            Choices , and honestly I have learnt so much </p>
-          <a href="#" class="btn btn-primary">View</a>
+        <div class="row d-flex justify-content-center">
+          <div class="card my-5 mx-5" style="width: 18rem;">
+            <img src="https://chany4.github.io/images.Portfolio/images/Screenshot%202024-05-10%20122903.png" id="dum" class="w-100 img.thumbnail m-auto" alt="...">
+            <div class="card-body">
+              <h5 class="text-capitalize fs-5 my-2">Life Choices Experience Report</h5>
+              <p class="card-text">This project was created to showcase all the things that I have learnt so far at Life
+                Choices , and honestly I have learnt so much </p>
+              <a href="https://wednesday-1m4b.vercel.app/" target="_blank" class="btn btn-primary">View</a>
+            </div>
+          </div>
+    
+          <div class="card my-5 mx-5" style="width: 18rem;">
+            <img src="https://chany4.github.io/images.Portfolio/images/Screenshot%202024-05-10%20123103.png" id="dum" class="w-100 img.thumbnail" alt="...">
+            <div class="card-body">
+              <h5 class="text-capitalize fs-5 my-2">Keyboard</h5>
+              <p class="card-text">This is a basic Keyboard with a display</p>
+              <a href="https://keyboard-gilt.vercel.app/" target="_blank" class="btn btn-primary">View</a>
+            </div>
+          </div>
+    
+          <div class="card my-5 mx-5" style="width: 18rem;">
+            <img src="https://chany4.github.io/images.Portfolio/images/Screenshot%202024-05-10%20125129.png" id="dum" class="w-100 img.thumbnail" alt="...">
+            <div class="card-body">
+              <h5 class="text-capitalize fs-5 my-2">Calculator</h5>
+              <p class="card-text">This is a simple Calculator BUT does not function</p>
+              <a href="https://calculator2-xi.vercel.app/" target="_blank" class="btn btn-primary">View</a>
+            </div>
+          </div>
+    
+          <div class="card my-5 mx-5" style="width: 18rem;">
+            <img src="https://chany4.github.io/images.Portfolio/images/Screenshot%202024-05-10%20123350.png" id="dum" class="w-100 img.thumbnail" alt="...">
+            <div class="card-body">
+              <h5 class="text-capitalize fs-5 my-2">Bootstrap Exercise</h5>
+              <p class="card-text">This Exercise was done as our Introduction to Bootstrap</p>
+              <a href="https://bootstrap-ex-gamma.vercel.app/" target="_blank" class="btn btn-primary">View</a>
+            </div>
+          </div>
+    
+          <div class="card my-5 mx-5" style="width: 18rem;">
+            <img src="https://chany4.github.io/images.Portfolio/images/Screenshot%202024-05-10%20124733.png" id="dum" class="w-100 img.thumbnail" alt="...">
+            <div class="card-body">
+              <h5 class="text-capitalize fs-5 my-2">Wednesday/17.04.2024</h5>
+              <p class="card-text">This was an exercise given for us to practise HTML and CSS, specifically CSS</p>
+              <a href="https://wednesday-17-04-2024-p2.vercel.app/" target="_blank" class="btn btn-primary">View</a>
+            </div>
+          </div>
+    
         </div>
-      </div>
-      <div class="card my-5 mx-5" style="width: 18rem;">
-        <img src="..." class="w-100 img.thumbnail" alt="...">
-        <div class="card-body">
-          <h5 class="text-capitalize fs-5 my-2">Business Website</h5>
-          <p class="card-text">This Website is to showcase my actual business. This was created as a seperate project to
-            the ones assigned at Life Choice Academy</p>
-          <a href="#" class="btn btn-primary">View</a>
-        </div>
-      </div>
-
-      <div class="card my-5 mx-5" style="width: 18rem;">
-        <img src="..." class="w-100 img.thumbnail" alt="...">
-        <div class="card-body">
-          <h5 class="text-capitalize fs-5 my-2">Keyboard</h5>
-          <p class="card-text">This is a basic Keyboard with a display</p>
-          <a href="#" class="btn btn-primary">View</a>
-        </div>
-      </div>
-
-      <div class="card my-5 mx-5" style="width: 18rem;">
-        <img src="..." class="w-100 img.thumbnail" alt="...">
-        <div class="card-body">
-          <h5 class="text-capitalize fs-5 my-2">Calculator</h5>
-          <p class="card-text">This is a simple Calculator BUT does not function</p>
-          <a href="#" class="btn btn-primary">View</a>
-        </div>
-      </div>
-
-      <div class="card my-5 mx-5" style="width: 18rem;">
-        <img src="..." class="w-100 img.thumbnail" alt="...">
-        <div class="card-body">
-          <h5 class="text-capitalize fs-5 my-2">Bootstrap Exercise</h5>
-          <p class="card-text">This Exercise was done as our Introduction to Bootstrap</p>
-          <a href="#" class="btn btn-primary">View</a>
-        </div>
-      </div>
-
-      <div class="card my-5 mx-5" style="width: 18rem;">
-        <img src="..." class="w-100 img.thumbnail" alt="...">
-        <div class="card-body">
-          <h5 class="text-capitalize fs-5 my-2">Wednesday/17.04.2024</h5>
-          <p class="card-text">This was an exercise given for us to practise HTML and CSS, specifically CSS</p>
-          <a href="#" class="btn btn-primary">View</a>
-        </div>
-      </div>
-
     </div>
   </section>
 
+  <!-- Testimonial Section -->
+
+  <section class = "testimonials py-5" id="testimonials" >
+    <div class = "container-lg py-4" data-aos="zoom-in-right">
+      <div class = "row justify-content-center" >
+        <div class="col-lg-8">
+          <div class = "section-title text-center " >
+            <h2 class = "fw-bold mb-5">Testimonials</h2>
+          </div>
+       </div>
+      </div>
+
+      <div class="carousel-container">
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item  active">
+                <img src="https://chany4.github.io/images.Portfolio/images/chloe%20A.jpg" class="d-block " alt="Chloe A">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Chloe Almazien</h5>
+                  <p><i>"Chandre is the most hard working person I know . She always holds her head high even in the face of adversity. Her gentle and kind nature is like that of a pink Saturn sheet both comforting and beautiful in its own right. she truly is a brilliant woman who will go far one day, that's a fact"</i></p>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img src="https://chany4.github.io/images.Portfolio/images/Keegan.jpg" class="d-block " alt="Keegan">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Keegan</h5>
+                  <p><i>"Chandre is a very charming , intelligent and caring young woman who is always one to ask questions , and is always willing to help someone when asked. She is one who takes pride in her work and always strives to be the best in what she does. Chandre is the type of person who attracts people with her charm and intelligence , and is one of the friendliest people one could meet."</i></p>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img src="https://chany4.github.io/images.Portfolio/images/Gwiba.jpg" class="d-block " alt="Gwiba">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Gwiba Mabandla</h5>
+                  <p><i>""One of the most caring and considerate people out there. She is very hardworking, and takes pride into knowing and understanding her work so everything is perfect. Don't  believe me? Check her notes""</i></p>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img src="https://chany4.github.io/images.Portfolio/images/Oyintanda.jpg" class="d-block " alt="Oyintanda">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Oyintanda</h5>
+                  <p><i>"Working with Chandre has been an absolute pleasure! Her dedication, and creativity have exceeded all expectations. She consistently deliver results and are a true asset to any team. I highly recommend Chandre for their outstanding skills and professionalism."</i></p>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img src="https://chany4.github.io/images.Portfolio/images/Marcus.jpg" class="d-block " alt="Marcus">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Marcus Adonis</h5>
+                  <p><i>"Soft hearted person who loves working with people. Contributes a lot in a team to produce quality results. Very hard working and puts in 110% effort"</i></p>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img src="https://chany4.github.io/images.Portfolio/images/Zen.jpg" class="d-block " alt="Zen">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Zen</h5>
+                  <p><i>"Having Chandre as a classmate has been a delightful experience. Her dedication to her studies, combined with her friendly and supportive demeanor, creates a positive atmosphere for everyone around her. She is a driven and hardworking individual who would be a great asset to any company she joins."</i></p>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img src="" class="d-block" alt="Jodie">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Jodie</h5>
+                  <p><i>""</i></p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- * Copy code of testi-items 5 times more for more testimonials but change the info for each  -->
+
+<!-- - * look at 36:00 to see what to do after -->
+
   <!-- contact me Section -->
-  <section class="mx-auto align-items-center">
-    <div class="row"  id="contact">
+  <section class="mx-auto align-items-center" data-aos="flip-left"
+  data-aos-easing="ease-out-cubic"
+  data-aos-duration="2000">
+    <div class="row"  id="contact" >
       <h1 class= "text-white d-flex justify-content-center">Contact Me</h1>
     </div>
     <div class="row col-lg-10 justify-content-center mx-auto" id="contact2">
@@ -269,11 +382,11 @@
           <br>
           <i class="bi bi-whatsapp"> +27 73 325 3129</i>
           <br>
-          <a href= "https://www.instagram.com/chanyleigh?utm_source=qr&igsh=MzNlNGNkZWQ4Mg=="><i class="bi bi-instagram text-black text-muted">@chanyleigh</i></a>
+          <a href= "https://www.instagram.com/chanyleigh?utm_source=qr&igsh=MzNlNGNkZWQ4Mg==" target="_blank"><i class="bi bi-instagram text-black text-muted">@chanyleigh</i></a>
           <br>
-          <a href ="mailto: chandreleighdavids04052005@gmail.com" class="text-black text-muted "><i class="bi bi-envelope-at">Email Me</i></a>
+          <a href ="mailto: chandreleighdavids04052005@gmail.com" target="_blank" class="text-black text-muted "><i class="bi bi-envelope-at">Email Me</i></a>
           <br>
-          <a href="https://github.com/Chany4/Portfolio"><i class="bi bi-github text-black text-muted">Chany4</i></a>
+          <a href="https://github.com/Chany4" target="_blank"><i class="bi bi-github text-black text-muted">Chany4</i></a>
 
           
           
@@ -283,7 +396,7 @@
       </div>
       <div class="col-lg-5"> 
         <div class="form d-flex justify-content-center ">
-        <form action="https://formspree.io/f/mnqelann" method="post">
+        <form action="https://formspree.io/f/mnqerjag" method="post" target="_blank">
           <label for="Surname">
             Enter your Surname:
             <br>
@@ -324,14 +437,18 @@
 
   <footer>
     <div class="d-flex justify-content-center">
-      <span><a href="https://github.com/Chany4/Portfolio" target="_blank" title="click on me"><img
+      <span><a href="https://github.com/Chany4" target="_blank" title="click on me"><img
             src="https://chany4.github.io/images.Portfolio/images/GitHub-Mark-ea2971cee799.png" alt="git hub icon"
             id="gitPic"></a></span><br>
       <p class="footer-Para"> Copyright © 2024 Chandre Leigh Davids All Rights Reserved</p>
     </div>
   </footer>
-
+ 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
     
