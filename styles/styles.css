@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Poetsen+One&display=swap');
 /* structure */
 
 
@@ -59,18 +60,22 @@ body, html{
     align-items: center;
     height: 100vh;
   }
+
+  #self3{
+    border-radius: 15px;
+  }
   
   /* About me section */
   
   #aboutMe{
     margin-top: 5px;
+    /* overflow: hidden; */
   }
   
   #self{
-    width: 4%;
-    height: 7%;
+    width: 100%;
+    height: 100%;
     margin: auto;
-    margin: 2%;
     border-radius:20px;
   }
   
@@ -99,7 +104,10 @@ body, html{
     padding: 10px;
   }
   #briefHead{
-    font-size: 30px;
+    font-size: 35px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin-top: 10px;
     color: red;
     background-color: transparent;
@@ -110,23 +118,28 @@ body, html{
   .box{
     padding: 2%;
     margin: 4%;
-    border: 3px solid white;
+    border: 7px solid white;
     border-radius: 25px;
   }
   #self2{
     width: 70% ;
-    height: 100%;
+    height: 92%;
     border-radius: 20px;
+    transform: translateY(25px);
   }
   
   .col> #about1-box-1{
     width:300px;
     height: 330px;
     margin: 50px;
+    padding: 0;
     margin-bottom: 15px;
     border: 1px solid white;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.781);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   
   }
   
@@ -142,7 +155,7 @@ body, html{
   
   img[alt="self"]{
     width:260px;
-    height: 170px;
+    height: 250px;
     border: 20px;
     object-fit: cover;
     margin: 10px 20px 10px 20px; 
@@ -160,7 +173,7 @@ body, html{
   #education-box-1{
     width: 400px;
     height: 500px;
-    border: 1px solid white;
+    border: 5px solid white;
   }
   
   #businessBox{
@@ -197,16 +210,19 @@ body, html{
   /* skills Section */
   
   #skills{
-    border: 2px solid white;
     margin-top: 10%;
-    border-radius: 20px;
-    background-color: white;
+    border-radius: 42px;
+background: #fb5b5b;
+box-shadow:  35px 35px 70px #943636,
+             -35px -35px 70px #ff8080;
+  }
+
+  #skills>[class="row text-center"]>#skill-List{
   }
   
   #skills>.row>[class="col-11"]{
-    border: 3px solid rgb(131, 0, 0);
-    background-color: red;
-    margin: 1.5%;
+    border-radius: 39px;
+background: linear-gradient( #45CAFF, rgb(255, 94, 121) rgb(255, 98, 0));    margin: 1.5%;
     padding: 1.5%;
     color: white;
     border-radius: 15px;
@@ -222,18 +238,46 @@ body, html{
   /* Projects Section */
   
     /* see if u can make the shadow of the cards pink and scale increase, use hover effect */
-  
+  .project-container .row .card:hover {
+    scale: 1.3;
+    border-radius: 50px;
+    background: #45CAFF;
+    box-shadow:  25px 25px 50px #d94167,
+                 -25px -25px 50px #ff598b;
+  }
+  .project-container .row .card:hover #dum{
+  border-radius: 25px;
+  }
+  .project-container .row .card >#dum{
+    margin-top: 2rem;
+  }
   
   
   /* Testiomonial Section */
+
+  .testimonials .carousel-container .carousel-inner {
+    height: 550px;
+  }
+
+  .testimonials .carousel-container .carousel-inner img {
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .testimonials .carousel-container .carousel-inner .carousel-caption {
+    background-color: white;
+    border-radius: 20px;
+    color: #ff70b5;
+    font-weight: bold;
+    margin: -200px;
+  }
   
   
   /* Contact me section */
   
   label{
-    color: White;
+    color: rgba(255, 255, 255, 0.893);
     background-color: rgb(255, 129, 150);
-    border-radius: 15px;
     width: 100%;
     height: auto;
   }
@@ -262,8 +306,23 @@ body, html{
     border: 3px solid rgb(245, 41, 177);
   }
   
+
   
   /* Animations */
+
+  @keyframes {
+    
+  }
   
   /* media Queries */
   
+  @media screan and (min-width: 300) {
+    #aboutMe{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main{
+        flex-wrap: wrap;
+    }
+  }
