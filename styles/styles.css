@@ -3,7 +3,7 @@
 
 
 body, html{
-    background-image: linear-gradient(to right, rgb(255, 95, 121), rgb(255, 138, 159), pink);
+    background-color: white;
     overflow-x: hidden;
     /* margin-bottom: 60px; */
     margin-left: 0;
@@ -63,13 +63,14 @@ body, html{
 
   #self3{
     border-radius: 15px;
+    object-fit: contain;
+    margin-left: 30%;
   }
   
   /* About me section */
   
   #aboutMe{
     margin-top: 5px;
-    /* overflow: hidden; */
   }
   
   #self{
@@ -81,10 +82,8 @@ body, html{
   
   
   .container-about1{
-    /* display: flex;
-    justify-content: center; */
     border: 2px solid white;
-    background-image: url(https://chany4.github.io/images.Portfolio/images/d8ac3ff154bd4d3f34b4459c55b78bd8.gif);
+    background-color: pink;
     background-size:cover;
   }
   #brief{
@@ -309,14 +308,10 @@ background: linear-gradient( #45CAFF, rgb(255, 94, 121) rgb(255, 98, 0));    mar
 
   
   /* Animations */
-
-  @keyframes {
-    
-  }
   
   /* media Queries */
   
-  @media screan and (min-width: 300) {
+  @media screen and (min-width: 300) {
     #aboutMe{
         display: flex;
         flex-wrap: wrap;
@@ -324,5 +319,8 @@ background: linear-gradient( #45CAFF, rgb(255, 94, 121) rgb(255, 98, 0));    mar
 
     main{
         flex-wrap: wrap;
+    }
+    body{
+      background-color: green;
     }
   }
